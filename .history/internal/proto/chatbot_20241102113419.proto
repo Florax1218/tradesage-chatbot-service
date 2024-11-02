@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package chatbot;
+
+option go_package = "github.com/Ayush10/tradesage-chatbot-service/internal/pb";
+
+// The Chatbot service definition.
+service ChatbotService {
+  // Sends a message to the chatbot and receives a response.
+  rpc SendMessage(ChatRequest) returns (ChatResponse) {}
+}
+
+// The request message containing the user's input.
+message ChatRequest {
+  string message = 1;
+}
+
+// The response message containing the chatbot's reply.
+message ChatResponse {
+  string reply = 1;
+}

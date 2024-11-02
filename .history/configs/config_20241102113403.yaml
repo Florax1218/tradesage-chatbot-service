@@ -1,0 +1,11 @@
+# Configuration file for TradeSage AI - Chatbot Integration Service
+
+openai:
+  api_key: YOUR_OPENAI_API_KEY
+
+market_data:
+  api_key: YOUR_MARKET_DATA_API_KEY
+  api_url: https://www.alphavantage.co/query
+
+auth_service:
+  url: http://localhost:5000/validate-token

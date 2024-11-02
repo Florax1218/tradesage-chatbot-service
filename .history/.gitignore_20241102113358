@@ -1,0 +1,32 @@
+# Binaries
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build directories
+/build
+/dist
+
+# Configuration files
+.env
+
+# Dependency directories
+vendor/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# IDE and editor files
+.idea/
+.vscode/
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+./.gitignore
