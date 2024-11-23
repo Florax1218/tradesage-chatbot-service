@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net"
+	"net/http"
 	"os"
 
 	pb "github.com/Ayush10/tradesage-chatbot-service/internal/pb"
@@ -16,6 +17,15 @@ import (
 )
 
 func main() {
+	go func() {
+		marketDataService := services.NewMarketDataService()
+		http.HandleFunc("/api/stock", marketDataService.ServeHTTP)
+		log.Println("HTTP Server starting on :8080...")
+		if err := http.ListenAndServe(":8080", nil); err != nil {
+			log.Printf("HTTP server error: %v", err)
+		}
+	}()
+
 	port := os.Getenv("CHATBOT_SERVICE_PORT")
 	if port == "" {
 		port = "50051"

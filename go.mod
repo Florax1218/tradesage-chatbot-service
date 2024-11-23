@@ -1,10 +1,12 @@
 module github.com/Ayush10/tradesage-chatbot-service
 
-go 1.21
+go 1.22.7
+
+toolchain go1.23.2
 
 require (
-	github.com/sashabaranov/go-openai v1.5.1
-	google.golang.org/grpc v1.67.1
+	github.com/sashabaranov/go-openai v1.35.7
+	google.golang.org/grpc v1.68.0
 	google.golang.org/protobuf v1.35.1
 )
 

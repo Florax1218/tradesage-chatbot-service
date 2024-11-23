@@ -3,8 +3,8 @@ package settings
 import (
 	"context"
 
-	"github.com/tradesage-chatbot-service/models"
-	pb "github.com/tradesage-chatbot-service/pb"
+	"github.com/Ayush10/tradesage-chatbot-service/internal/models"
+	pb "github.com/Ayush10/tradesage-chatbot-service/internal/pb"
 )
 
 type Service struct {

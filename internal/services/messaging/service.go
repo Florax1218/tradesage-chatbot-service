@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
+	"github.com/Ayush10/tradesage-chatbot-service/internal/models"
+	pb "github.com/Ayush10/tradesage-chatbot-service/internal/pb"
 	"github.com/google/uuid"
-	"github.com/tradesage-chatbot-service/internal/models"
-	pb "github.com/tradesage-chatbot-service/internal/pb"
 )
 
 type Service struct {
